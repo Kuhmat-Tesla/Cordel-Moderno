@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "Passion one";
+    src: url("fontes/PassionOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Sriracha";
+    src: url("fontes/Sriracha-Regular.ttf");
+}
+
+:root {
+    --preto: #rgb(51, 51, 51);
+    --azul-escuro: #06104B;
+    --azul-transp: #06104B59;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+header {
+    text-align: center;
+    color: white;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    box-shadow: 0 0 6px 0 #00000057;
+    background-color: var(--azul-escuro);
+}
+
+h1 {
+    margin-bottom: 10px;
+    font: normal 5em "Passion one";
+}
+
+a {
+    color: #02AB0B;
+    font-weight: bold;
+}
+
+strong {
+    color: #02AB0B;
+}
+
+section p {
+    line-height: 30px;
+    margin-bottom: 40px;
+    font: normal 30px "Sriracha";
+}
+
+section {
+    padding: 10vh 5vw;
+}
+
+.especial {
+    box-shadow: inside 0 0 10px #0000005E;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-color: var(--azul-escuro);
+}
+
+.especial p {
+    padding: 5px;
+    display: inline-block;
+    color: white;
+    background-color: var(--azul-transp);
+}
+
+#especial1 {
+    background-image: url("imagens/joaninha.jpg");
+    background-position: center right;
+}
+
+#especial2 {
+    background-image: url(imagens/livro.jpg);
+}
+
+footer {
+    text-align: center;
+    background-color: #090909;
+    padding: 30px;
+    padding-bottom: 5px;
+}
+
+footer p {
+    margin: auto;
+    max-width: 400px;
+    text-align: left;
+    color: white;
+    line-height: 20px;
+    font-size: large;
+    word-spacing: 4px;
+}
+
+.redesSociais {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+footer a {
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.face {
+    background-image: url("imagens/face-logo.png");
+
+}
+
+.github {
+    background-image: url("imagens/github-logo.png");
+}
+
+.whatsapp {
+    background-image: url("imagens/whatsapp-logo.png");
+}
+
+.youtube {
+    background-image: url("imagens/youtube-logo.png");
+}
+
+label {
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    section p {
+        font-size: 23px;
+    }
+
+    section {
+        padding: 10vh 10vw;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    section p {
+        font-size: 26px;
+    }
+}
